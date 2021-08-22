@@ -87,7 +87,7 @@ hr {
     max-width: 140px;
     padding: 0.6rem 1.2rem;
     background-color: var(--primary-color);
-    color: #fff;
+    color:var(--off-white);
     margin: 1rem auto;
     border-radius: 2rem; 
 }
@@ -134,6 +134,9 @@ hr {
 .title-image {
     width: 90%;
 }
+.touch{
+    padding-bottom: 1rem;
+  }
 
 @media(max-width:1028px) {
     #title {
@@ -150,6 +153,7 @@ hr {
         padding: 3rem 0rem; 
         position: static;
     }
+    
 }
 
 /* footer section */
@@ -160,7 +164,7 @@ hr {
 }
 
 .footer-icon {
-    color: var(--primary-color);
+    color: var(--off-white);
     text-decoration:none;
     margin: 20px 10px;
 }
