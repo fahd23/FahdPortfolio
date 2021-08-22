@@ -1,33 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #7C3AED;
+    --off-white: #F3F4F6;
+    --dark-gray: #6B7280;
+    --back-color: #000000;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0px auto;
+    width: 100%;
+}
+
 #title {
-    background-color: #000000;
-    font-family: 'Montserrat', sans-serif;
-    color: #6C63FF;
+    background-color: var(--back-color) ;
+    color:var(--primary-color);
 }
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
     line-height: 1.5;
 }
 
 h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 1.5;
 }
 
 h3 {
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     line-height: 1.5;
 }
 
 p {
-    color: #8f8f8f;
+    font-size: 1.1rem;
+    color:var(--dark-gray);
+}
+
+hr {
+    margin: 2rem 0rem;
+}
+/** section **/
+
+.section {
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.section h1 {
+    text-align: center;
+
+}
+.ow {
+    background-color: var(--off-white);
+    border-radius: 0.5rem;
+}
+.blogs{
+    margin: 0;
+    padding-bottom: 4rem;
+}
+
+/** container **/
+.container {
+    padding: 0rem 1rem;
+}
+
+.container-center {
+    max-width:80%;
+    margin: auto;
+}
+/* navbar link */
+.container-fluid .navbar-nav .nav-item .link-active{
+    color:var(--off-white);
+    font-weight: bold;
+}
+/** links **/
+.link {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.link-primary {
+    max-width: 140px;
+    padding: 0.6rem 1.2rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    margin: 1rem auto;
+    border-radius: 2rem; 
+}
+
+.link-secondary {
+    max-width: 140px;
+    margin: 1rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 2rem;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+.mypic{
+    display: block;
+    padding: 2rem;
+    margin: auto;
+    width: 35%;
 }
 
 .container-fluid {
-    padding: 3% 15% 7%;
+    padding: 3% 15% 5%;
 }
 
 .navbar {
@@ -38,7 +119,7 @@ p {
     font-family: 'Ubuntu';
     font-size: 2.5rem;
     font-weight: bold;
-    color: #6C63FF;
+    color:var(--primary-color);
 }
 
 .nav-item {
@@ -47,8 +128,7 @@ p {
 
 .navbar-dark .navbar-nav .nav-link {
     font-size: 1.3rem;
-    font-family: sans-serif;
-    color: #6C63FF;
+    color: var(--primary-color);
 }
 
 .title-image {
@@ -59,24 +139,28 @@ p {
     #title {
         text-align: center;
     }
-
+    .mypic{
+        margin: auto;
+        padding: 3rem 0rem; 
+        position: static;
+        width:50%;
+    }
     .title-image {
         margin: auto;
-        padding: 3rem 0rem;
+        padding: 3rem 0rem; 
         position: static;
-        transform: rotate(0);
     }
 }
 
 /* footer section */
 #footer {
     text-align: center;
-    background-color: #0a0a0a;
+    background-color:var(--back-color);
     padding: 3% 15%;
 }
 
 .footer-icon {
-    color: #6C63FF;
+    color: var(--primary-color);
     text-decoration:none;
     margin: 20px 10px;
 }
