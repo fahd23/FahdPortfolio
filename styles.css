@@ -165,6 +165,10 @@ hr {
     #title {
         text-align: center;
     }
+ 
+.link-primary {
+    display: block;
+}
 
     .mypic {
         margin: auto;
