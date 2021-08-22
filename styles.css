@@ -132,7 +132,16 @@ hr {
 }
 
 .title-image {
-    width: 90%;
+    width: 80%;
+    padding-left: 3rem;
+}
+.project-image{
+    padding-left: 3rem;
+    width: 70%;
+}
+.blog-image{
+    padding-left: 3rem;
+    width: 60%;
 }
 .touch{
     padding-bottom: 1rem;
