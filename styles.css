@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 :root {
+    --primary-color: #6c63ff ;
     --off-white: #F3F4F6;
     --dark-gray: #6B7280;
     --back-color: #000000;
-    --nav-color: #7C3AED;
+    --nav-color: #7C3AED ;
 }
 
 body {
@@ -132,7 +133,7 @@ hr {
     font-family: 'Ubuntu';
     font-size: 2.5rem;
     font-weight: bold;
-    color: var(--nav-color);
+    color: var(--primary-color);
 }
 
 .nav-item {
@@ -141,7 +142,7 @@ hr {
 
 .navbar-dark .navbar-nav .nav-link {
     font-size: 1.3rem;
-    color: var(--nav-color);
+    color: var(--primary-color);
 }
 
 .title-image {
