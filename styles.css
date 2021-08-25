@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 :root {
-    --primary-color: #52616B;
     --off-white: #F3F4F6;
     --dark-gray: #6B7280;
     --back-color: #000000;
-    --nav-color:#af4dfff6;
+    --nav-color: #7C3AED;
 }
 
 body {
@@ -99,7 +98,7 @@ hr {
 .link-primary {
     max-width: 140px;
     padding: 0.6rem 1.2rem;
-    background-color: var(--primary-color);
+    background-color: var(--nav-color);
     color: var(--off-white);
     margin: 1rem auto;
     border-radius: 5rem;
@@ -110,8 +109,8 @@ hr {
     margin: 1rem;
     padding: 0.6rem 1.2rem;
     border-radius: 5rem;
-    border: 1px solid var(--primary-color);
-    color: var(--primary-color);
+    border: 1px solid var(--nav-color);
+    color: var(--nav-color);
 }
 
 .mypic {
@@ -159,7 +158,8 @@ hr {
 }
 
 .touch {
-    padding-bottom: 1rem;
+    width: 70%;
+    padding-bottom: 2rem;
 }
 
 @media(max-width:900px) {
@@ -178,6 +178,7 @@ hr {
         width: 50%;
     }
 
+    
     .title-image {
         padding: 3rem 0rem;
         position: static;
@@ -222,9 +223,12 @@ hr {
     margin: 20px 10px;
 }
 
-@media(min-width:1280px) {
+@media(min-width:800px) {
     .title-image {
         padding-left: 5rem;
+    }
+    .mypic {
+        width: 30%;
     }
 
     .project-image {
@@ -234,5 +238,9 @@ hr {
     .blog-image {
         padding-left: 5rem;
 
-    }    
+    }   
+    .touch {
+        width: 20%;
+        padding-bottom: 1rem;
+    } 
 }
