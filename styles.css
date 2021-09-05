@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
 
 :root {
     --primary-color: #8B5CF6;
@@ -44,7 +45,9 @@ p {
 hr {
     margin: 2rem 0rem;
 }
-
+small.neogprojectmark{
+    color: var(--btn-color);
+}
 /** section **/
 
 .section {
@@ -131,7 +134,7 @@ hr {
 }
 
 .navbar .navbar-brand {
-    font-family: 'Ubuntu';
+    font-family: 'Merienda';
     font-size: 2.5rem;
     font-weight: bold;
     color: var(--primary-color);
@@ -143,7 +146,7 @@ hr {
 
 .navbar-dark .navbar-nav .nav-link {
     font-size: 1.3rem;
-    color: var(--primary-color);
+    color: var(--btn-color);
 }
 
 .title-image {
