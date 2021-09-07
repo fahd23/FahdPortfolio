@@ -26,6 +26,9 @@ h1 {
     font-size: 2.5rem;
     line-height: 1.5;
 }
+.list-non-bullet h1{
+    font-size: 2rem;
+}
 
 h2 {
     font-size: 2rem;
