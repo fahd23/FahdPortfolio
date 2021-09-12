@@ -220,16 +220,20 @@ small.neogprojectmark{
 
 /* footer section */
 #footer {
-    margin-top: 3rem;
+    margin-top: 2rem;
     text-align: center;
     background-color: var(--back-color);
-    padding: 2% 15% 1%;
+    padding: 2% 15%;
 }
 
 .footer-icon {
     color: var(--off-white);
     text-decoration: none;
-    margin: 20px 10px;
+    margin:1rem 1.5rem 0.5rem;
+    font-size: 1.7rem;
+}
+#footer-p{
+    margin: 0.5rem 0 0;
 }
 
 @media(min-width:800px) {
