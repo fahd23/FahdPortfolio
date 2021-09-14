@@ -220,7 +220,6 @@ small.neogprojectmark{
 
 /* footer section */
 #footer {
-    margin-top: 2rem;
     text-align: center;
     background-color: var(--back-color);
     padding: 2% 15%;
