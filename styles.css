@@ -5,7 +5,7 @@
     --primary-color: #8B5CF6;
     --off-white: #F3F4F6;
     --dark-gray: #6B7280;
-    --back-color: #111;
+    --black-color: #111;
     --btn-color: #892CDC ;
 }
 
@@ -16,7 +16,7 @@ body {
 }
 
 #title {
-    background-color: var(--back-color);
+    background-color: var(--black-color);
     color: var(--off-white);
 }
 #title p{
@@ -169,7 +169,10 @@ small.neogprojectmark{
     width: 70%;
     padding-bottom: 2rem;
 }
-
+a:hover { 
+    text-decoration: none; 
+    color: #000;
+}
 @media(max-width:900px) {
     #title {
         text-align: center;
@@ -221,16 +224,19 @@ small.neogprojectmark{
 /* footer section */
 #footer {
     text-align: center;
-    background-color: var(--back-color);
+    background-color: var(--black-color);
     padding: 2% 15%;
 }
 
 .footer-icon {
     color: var(--off-white);
-    text-decoration: none;
     margin:1rem 1.2rem 0.5rem;
     font-size: 1.7rem;
 }
+.footer-icon:hover{
+    color:var(--primary-color);
+}
+
 #footer-p{
     margin: 0.5rem 0 0;
 }
