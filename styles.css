@@ -4,9 +4,9 @@
 :root {
     --primary-color: #8B5CF6;
     --off-white: #F3F4F6;
-    --dark-gray: #6B7280;
+    --dark-gray: #303338;
     --black-color: #111;
-    --btn-color: #892CDC ;
+    --btn-color: #892CDC;
 }
 
 body {
@@ -15,29 +15,26 @@ body {
     width: 100%;
 }
 
-#title {
-    background-color: var(--black-color);
-    color: var(--off-white);
-}
-#title p{
-    color: var(--primary-color);
-}
 h1 {
     font-size: 2.5rem;
     line-height: 1.5;
-}
-.list-non-bullet h1{
-    font-size: 2rem;
+    font-weight: 500;
 }
 
 h2 {
     font-size: 2rem;
     line-height: 1.5;
+    font-weight: 550;
 }
 
 h3 {
     font-size: 1.5rem;
     line-height: 1.5;
+    font-weight: 500;
+}
+
+.list-non-bullet h1 {
+    font-size: 2rem;
 }
 
 p {
@@ -45,17 +42,15 @@ p {
     color: var(--dark-gray);
 }
 
-hr {
-    margin: 2rem 0rem;
-}
-small.neogprojectmark{
+small.neogprojectmark {
     color: var(--btn-color);
 }
+
 /** section **/
 
 .section {
     padding: 2rem;
-    margin: 2rem 0;
+    margin: 0;
     border-radius: 1rem;
     text-align: center;
 }
@@ -91,11 +86,6 @@ small.neogprojectmark{
     margin: auto;
 }
 
-/* navbar link */
-.container-fluid .navbar-nav .nav-item .link-active {
-    color: var(--off-white);
-    font-weight: bold;
-}
 /** links **/
 .link {
     box-sizing: border-box;
@@ -132,83 +122,65 @@ small.neogprojectmark{
     padding: 3% 15% 5%;
 }
 
-.navbar {
-    padding: 0 0 4.5rem;
+/**nav bar **/
+.navigation {
+    background-color: var(--black-color);
+    color: var(--btn-color);
+    padding: 1rem;
 }
 
-.navbar .navbar-brand {
+.navigation .nav-pills {
+    display: flex;
+    align-content: flex-end;
+    justify-content: flex-end;
+}
+
+.navigation .list-item-inline {
+    display: inline-block;
+}
+
+.navigation .link {
+    color: var(--btn-color);
+    font-size: 1.2rem;
+}
+
+.navigation .nav-brand {
     font-family: 'Merienda';
-    font-size: 2.5rem;
     font-weight: bold;
+    font-size: 1.8rem;
+    padding: auto 3rem;
+}
+
+.navigation .nav-brand a:hover {
     color: var(--primary-color);
 }
 
-.nav-item {
-    padding: 0 18px;
-}
-
-.navbar-dark .navbar-nav .nav-link {
+.navigation .link-active {
+    font-weight: bold;
     font-size: 1.3rem;
-    color: var(--btn-color);
+    color: var(--off-white);
 }
 
-.title-image {
-    width: 68%;
-    margin-bottom: 50px;
+
+.navigation a {
+    text-decoration: none;
+    color: var(--off-white);
 }
 
-.project-image {
-    width: 78%;
+.navigation a:hover {
+    color: var(--off-white);
 }
 
-.blog-image {
-    width: 65%;
+a:hover {
+    text-decoration: none;
 }
 
 .touch {
     width: 70%;
     padding-bottom: 2rem;
 }
-a:hover { 
-    text-decoration: none; 
-    color: #000;
-}
-@media(max-width:900px) {
-    #title {
-        text-align: center;
-    }
- 
-.link-primary {
-    display: block;
-}
 
-    .mypic {
-        margin: auto;
-        padding: 3rem 0rem;
-        position: static;
-        width: 50%;
-    }
 
-    
-    .title-image {
-        padding: 3rem 0rem;
-        position: static;
-    }
-
-    .project-image {
-        margin: auto;
-        padding: 3rem 0rem;
-        position: static;
-    }
-
-    .blog-image {
-        margin: auto;
-        padding: 3rem 0rem;
-        position: static;
-
-    }
-
-}
 
 /** projects **/
 .showcase-list {
@@ -217,6 +189,7 @@ a:hover {
     border-radius: 1rem;
     text-align: center;
 }
+
 .showcase-list p {
     padding-bottom: 1rem;
 }
@@ -230,35 +203,40 @@ a:hover {
 
 .footer-icon {
     color: var(--off-white);
-    margin:1rem 1.2rem 0.5rem;
+    margin: 1rem 1.2rem 0.5rem;
     font-size: 1.7rem;
-}
-.footer-icon:hover{
-    color:var(--primary-color);
+    text-decoration: none;
 }
 
-#footer-p{
+.footer-icon:hover {
+    color: var(--primary-color);
+}
+
+#footer-p {
+    color: var(--off-white);
     margin: 0.5rem 0 0;
 }
 
-@media(min-width:800px) {
-    .title-image {
-        padding-left: 5rem;
+@media(max-width:900px) {
+    .link-primary {
+        display: block;
     }
+
+    .mypic {
+        margin: auto;
+        padding: 3rem 0rem;
+        position: static;
+        width: 65%;
+    }
+}
+
+@media(min-width:800px) {
     .mypic {
         width: 30%;
     }
 
-    .project-image {
-        padding-left: 5rem;
-    }
-
-    .blog-image {
-        padding-left: 5rem;
-
-    }   
     .touch {
         width: 20%;
         padding-bottom: 1rem;
-    } 
+    }
 }
