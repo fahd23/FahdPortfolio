@@ -221,20 +221,12 @@ a:hover {
     .link-primary {
         display: block;
     }
-
     .mypic {
-        margin: auto;
-        padding: 3rem 0rem;
-        position: static;
-        width: 65%;
+        width: 85%;
     }
 }
 
 @media(min-width:800px) {
-    .mypic {
-        width: 30%;
-    }
-
     .touch {
         width: 20%;
         padding-bottom: 1rem;
