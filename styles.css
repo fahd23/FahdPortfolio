@@ -23,13 +23,11 @@ h1 {
 
 h2 {
     font-size: 2rem;
-    line-height: 0.7;
     font-weight: 550;
 }
 
 h3 {
     font-size: 1.5rem;
-    line-height:0.5;
     font-weight: 500;
 }
 
@@ -112,13 +110,6 @@ small.neogprojectmark {
     color: var(--btn-color);
 }
 
-.mypic {
-    display: block;
-    padding: 2rem;
-    margin: auto;
-    width: 35%;
-}
-
 .container-fluid {
     padding: 3% 15% 5%;
 }
@@ -181,8 +172,6 @@ a:hover {
     padding-bottom: 2rem;
 }
 
-
-
 /** projects **/
 .showcase-list {
     margin-top: 2rem;
@@ -218,24 +207,23 @@ a:hover {
     margin: 0.5rem 0 0;
 }
 
-@media(max-width:900px) {
+.mypic {
+    width: 35%;
+    display: block;
+    padding: 2rem;
+    margin: auto;
+}
+
+@media screen and (max-width:900px) {
     .link-primary {
         display: block;
     }
-
-    .mypic {
-        margin: auto;
-        padding: 3rem 0rem;
-        position: static;
-        width: 65%;
+    .mypic{
+        width: 80%;
     }
 }
 
 @media(min-width:800px) {
-    .mypic {
-        width: 30%;
-    }
-
     .touch {
         width: 20%;
         padding-bottom: 1rem;
